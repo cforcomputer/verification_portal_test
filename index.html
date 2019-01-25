@@ -3,27 +3,53 @@
 <title>Verify Student Roles</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
-.bgimg {
-  background-image: url('bothell_1.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
 </style>
 <body>
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
+    <p>CSS Unofficial</p>>
   </div>
+
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <h1 class="w3-jumbo w3-animate-top">Verify ID</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
+    <p class="w3-large w3-center">Please upload a picture of your student ID</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <button type="button">Upload ID</button> 
+
+      <label for="major">Major</label>
+      <select id="major" name="major">
+        <option value="ac">AC</option>
+        <option value="csse">CSSE</option>
+        <option value="ce">CE</option>
+        <option value="imd">IMD</option>
+        <option value="ee">EE</option>
+        <option value="me">ME</option>
+        <option value="math">Math</option>
+        <option value="mis">MIS</option>
+        <option value="other">Other</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </form>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
+</div>
+  
+<div>
+    
+  </div>
+</body>
